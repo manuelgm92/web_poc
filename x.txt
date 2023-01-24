@@ -1,0 +1,20 @@
+Git bash
+
+git add -A
+git commit -m "mensaje"
+git push 
+git status
+
+
+----- 
+Abrir command prompt
+Moverte al disco Y(carpeta compartida)--> Y: 
+Para ejecutar: python copy_files.py
+Para parar: control+c
+
+
+
+---- 
+
+Ruta archivo a trabajar
+C:\PROYECTOS\CONSCIENCESWEB\consciencesai_framework\Web\framework_section_v13_prod_v2.html
