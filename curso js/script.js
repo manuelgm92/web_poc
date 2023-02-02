@@ -1,49 +1,64 @@
- /*Bucles e Iteración/*
+"use strict";
 
- 
+/*
+for (let i = 0; i < 10; i++) {
+
+  if (i % 2) {
+    alert( i );
+  }
+
+}*/
+
+//for (let i = 0; i < 3; i++) {
+let i = 0;
+
+while (i < 3) {
+    alert(`número ${i}!`);
+    
+    }
+  //alert( `número ${i}!` );
+//}
 
 
+/*let login = prompt("Quién está ahí?","");
 
-
-
-
-
-
-
-
- /*Arrays Asociativos, el orden de 0,1,2,.. cambiar esas posiciones por otras cosas para llamar a esa posición: 
-
-let pc1 = {
-	nombre: "DaltoPC",
-	procesador: "Intel Core i5",
-	ram: "32gb",
-	rom: "500gb",
+if (login == "Admin"){
+  let pass = prompt("Contraseña?",""); 
+    if (pass == "TheMaster"){
+      alert("Bienvenido");
+    } 
+    else if (pass === "" || pass === null ){
+      alert("Cancel");
+    } 
+    else {
+      alert("No te Conozco");
+    }
+  } 
+else if (login == "" || login == null){
+  alert("Cancelado");
+}  
+else {
+  alert("No te conozco");
 }
 
-let pc2 = ["DaltoPC", "procesador", "ram", "rom"]
 
-document.write(pc1["ram"])
+/*let message;
 
-let nombre = pc1["nombre"];
-let procesador = pc1["procesador"];
-let ram = pc1["ram"];
-let rom = pc1["rom"];
+message = loggin == "Empleado" ? "Hola!" :
+loggin == "Director" ? "Felicidades" :
+loggin == "" ? "sin sesión" :
+"";
 
-frase = `el nombre de mi PC es: ${nombre} <br> 
-el procesador es ${procesador} <br>
-la ram es ${ram} <br>
-la ram es de ${rom} <br>` ;
+if (login == 'Empleado') {
+    message = 'Hola';
+  } else if (login == 'Director') {
+    message = 'Felicidades';
+  } else if (login == '') {
+    message = 'Sin sesión';
+  } else {
+    message = '';
+  }*/
 
-document.write(frase);
+  //alert( alert(1) && alert(2) );
 
-*/
-
-
-
-
-
-
-
-
-
-
+  //if (age > 13 && age < 91)
