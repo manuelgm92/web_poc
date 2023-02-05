@@ -1,5 +1,14 @@
 "use strict";
 
+
+let number;
+
+do{
+  number = prompt("Ingresa un número mayor a 100","0");
+  }
+ while (number <= 100);
+
+
 /*
 for (let i = 0; i < 10; i++) {
 
@@ -10,7 +19,7 @@ for (let i = 0; i < 10; i++) {
 }*/
 
 //for (let i = 0; i < 3; i++) {
-let i = 0;
+/*let i = 0;
 
 while (i < 3) {
     alert(`número ${i}!`);
