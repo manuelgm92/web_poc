@@ -1,6 +1,45 @@
 "use strict";
 
-let n = 10;
+
+
+let pc1 = {
+  nombre: "ManuPC",
+  procesador: "i5",
+  ram: "16gb",
+  rom: "1tb"
+}
+
+let nombre = pc1["nombre"];
+
+
+document.write(`el nombre de mi pc es ${nombre}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*let n = 10;
 
 nextPrime:
 for (let i = 2; i <= n; i++) { // por cada i...
