@@ -1,53 +1,39 @@
-
-const sumar = (num1, num2) => {
-  return parseInt(num1) + parseInt(num2);
-}
-
-const restar = (num1, num2) => {
-  return parseInt(num1) - parseInt(num2);
-}
-
-const dividir = (num1, num2) => {
-  return parseInt(num1) / parseInt(num2);
-}
-const multiplicar = (num1, num2) => {
-  return parseInt(num1) * parseInt(num2);
-}
-
-
-
-
-alert("Qué operación deseas realizar?")
-let operacion = prompt("1: suma, 2: resta, 3: división, 4: multiplicación");
-
-if(operacion == 1){
-  let numero1 = prompt("primer numero para sumar");
-  let numero2 = prompt("segundo numero para sumar");
-  resultado = sumar(numero1,numero2);
-  alert(`El resultado es ${resultado}`);
-}
-
-else if ( operacion == 2){
-  let numero1 = prompt("primer numero para restar");
-  let numero2 = prompt("segundo numero para restar");
-  resultado = restar(numero1,numero2);
-  alert(`El resultado es ${resultado}`);
-}
-
-else if ( operacion == 3){
-  let numero1 = prompt("primer numero para dividir");
-  let numero2 = prompt("segundo numero para dividir");
-  resultado = dividir(numero1,numero2);
-  alert(`El resultado es ${resultado}`);
-}
-
-else if ( operacion == 4){
-  let numero1 = prompt("primer numero para multiplicar");
-  let numero2 = prompt("segundo numero para multiplicar");
-  resultado = multiplicar(numero1,numero2);
-  alert(`El resultado es ${resultado}`);
-}
-
-else {
-  alert("No se ha encontrado la operación");
-}
+do {
+	let nota = prompt("Introduce tu nota");
+	
+  	if (Number(nota) == nota) {
+		//SI LA NOTA ES ENTRE 0 Y 10 COMPRUEBA EL RANGO Y DA UN MENSAJE
+		if (nota > 0 && nota <= 10) {
+			if (nota < 3) {
+				alert("Muy deficiente");
+			}
+			else if (nota < 5) {
+				alert("Insuficiete");
+			}
+			else if (nota < 6) {
+				alert("Suficiente");
+			}
+			else if (nota < 7) {
+				alert("Bien");
+			}
+			else if (nota < 9) {
+				alert("Notable"); 5
+			}
+			else if (nota >= 9) {
+				alert("Sobresaliente");
+			}
+		}
+		//SI LA NOTA NO ES ENTRE 0 Y 10
+		else {
+			alert("Nota erronea");
+		}
+	}
+	//SI LA NOTA INTRODUCIDA NO ES UN NÚMERO
+	else {
+		//SI SE HA PULSADO ACEPTAR SIN INTRODUCIR NADA
+		if (nota != undefined) {	//No es Undefined cuando se pulsa aceptar.
+			alert("Introduce un numero valido");
+		}
+	}
+//EL BUCLE VUELVE ARRIBA MIENTRAS NO SE HAYA PULSADO CANCELAR
+} while (nota != undefined);	
