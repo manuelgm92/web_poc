@@ -1,29 +1,19 @@
 
-let a = +prompt('a?', '');
-/*
-if (a == 0) {
-  alert( 0 );
-}
-if (a == 1) {
-  alert( 1 );
+class animal {
+	constructor(especie, edad, color){
+		this.especie = especie;
+		this.edad = edad;
+		this.color = color;
+		this.info = `Soy ${this.especie}, tengo ${this.edad} años y soy de color ${this.color}`;
+	}
+	verInformacion (){
+		document.write(this.info);
+	}
+
 }
 
-if (a == 2 || a == 3) {
-  alert( '2,3' );
-}*/
+let perro = new animal("caniche",13,"marron")
 
-switch(a){
-	case 0: {
-		alert(0);
-		break;
-	}
-	case 1: {
-		alert(1);
-		break;
-	}
-	case 2:
-	case 3: {
-		alert("2,3")
-		break;
-	}
-}
+//document.write(perro.info)
+
+perro.verInformacion();
