@@ -1,16 +1,49 @@
-
-const sumar = (a, b) => {
-    console.log(a);
-    console.log(b);
-    return a + b
-}
-
-const op1 = 8
-const op2 = 2
-
-console.log(sumar(op1, op2))
+//REACT
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//functions
+
+
+// const sumar = (a, b) => {
+//     console.log(a);
+//     console.log(b);
+//     return a + b
+// }
+
+// const op1 = 8
+// const op2 = 2
+
+// console.log(sumar(op1, op2))
+
+// function restar (a,b) => {
+//     console.log(a);
+//     console.log(b);
+//     return a + b
+// }
 
 
 
