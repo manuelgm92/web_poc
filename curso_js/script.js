@@ -1,9 +1,14 @@
-let min = (a,b) => {
-    if (a < b){
-        return a;
+let esPar = (n) => {
+    if (n === 0) { 
+        return true;
+    }
+    else if (n == 1) {
+        return false;
+    } else if (n < 0) {
+        return esPar(-n)
     } else {
-        return b;
+        return esPar(n - 2)
     }
 }
-document.write(min(7,10))
 
+document.write(esPar(-2));
