@@ -1,27 +1,30 @@
-function switchOfStuff(val) {
+function chainToSwitch(val) {
     let answer = "";
+   
     switch(val){
-        case "a": 
-            return "apple";
-    
-        case "b": 
-            return "bird";
-            break;
-
-        case "c": 
-            return "cat";
-            break;
-
-        default: 
-            return "stuff";
-            break;
+      case "bob":
+        answer = "Marley";
+        break;
+      case 42:
+        answer = "The Answer";
+        break;
+      case 1:
+        answer = "There is no #1"
+        break;
+      case 99:
+        answer = "Missed me by this much!"
+        break;
+      case 7:
+        answer = "Ate Nine"
+        break;
+  
     }
   
-
-  return answer;
+    return answer;
   }
   
-document.write(switchOfStuff("2"));
+  
+document.write(chainToSwitch(7));
 
 
 
