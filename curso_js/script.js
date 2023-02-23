@@ -1,21 +1,11 @@
-let count = 0;
+const myDog = {
+  name: "Luna",
+  age: "7 year",
+  color: "black",
+  legs: 4
+};
 
-function cc(card) {
-    if(card <= 6){
-        count++
-    } else if(card >= "10"){
-        count--
-    }
-    
-
-    return count + (count > 0 ? " Bet" : " Hold");
-}
-
-cc(2); cc(3); cc(7); cc('K'); cc('A');
-
-
-
-
+document.write(`${myDog.name} is my dog, she is ${myDog.age}.`)
 
 
 
