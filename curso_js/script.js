@@ -1,12 +1,22 @@
-const myDog = {
-  name: "Luna",
-  age: "7 year",
-  color: "black",
-  legs: 4
-};
+// Configuración
+function phoneticLookup(val) {
+  let result = "";
 
-document.write(`${myDog.name} is my dog, she is ${myDog.age}.`)
+  const lookup = {
+  "alpha": "Adams",
+  "bravo": "Boston",
+  "charlie": "Chigaco",
+  "delta": "Denver",
+  "echo": "Easy",
+  "foxtrot": "Frank"
+  };
+  
+  result = lookup[val];
+  
+  return result;
+}
 
+document.write(phoneticLookup("charlie"));
 
 
 
