@@ -1,43 +1,17 @@
-function chainToSwitch(val) {
-    let answer = "";
-   
-    switch(val){
-      case "bob":
-        answer = "Marley";
-        break;
-      case 42:
-        answer = "The Answer";
-        break;
-      case 1:
-        answer = "There is no #1"
-        break;
-      case 99:
-        answer = "Missed me by this much!"
-        break;
-      case 7:
-        answer = "Ate Nine"
-        break;
-  
+let count = 0;
+
+function cc(card) {
+    if(card <= 6){
+        count++
+    } else if(card >= "10"){
+        count--
     }
-  
-    return answer;
-  }
-  
-  
-document.write(chainToSwitch(7));
+    
 
+    return count + (count > 0 ? " Bet" : " Hold");
+}
 
-
-
-
-
-
-
-
-
-
-
-
+cc(2); cc(3); cc(7); cc('K'); cc('A');
 
 
 
