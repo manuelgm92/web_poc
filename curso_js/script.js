@@ -1,22 +1,16 @@
-// Configuración
-function phoneticLookup(val) {
-  let result = "";
+function checkObj(obj, checkProp) {
+   
+    if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
 
-  const lookup = {
-  "alpha": "Adams",
-  "bravo": "Boston",
-  "charlie": "Chigaco",
-  "delta": "Denver",
-  "echo": "Easy",
-  "foxtrot": "Frank"
-  };
   
-  result = lookup[val];
   
-  return result;
+  
+  
 }
-
-document.write(phoneticLookup("charlie"));
 
 
 
