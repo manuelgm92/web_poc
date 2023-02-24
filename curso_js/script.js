@@ -6,6 +6,7 @@ function checkObj(obj, checkProp) {
     return "Not Found";
   }
 
+  document.write()
   
   
   
