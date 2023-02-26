@@ -2,11 +2,11 @@
 const myArray = [];
 
 // Cambia solo el código debajo de esta línea
-let i = 5;
-while (i >= 0){
+
+for (let i = 1; i > 0 && i <= 5; i++){
   myArray.push(i);
-  i--;
 }
+
 document.write(myArray)
 
 
