@@ -7,7 +7,7 @@ for (let i = 1; i > 0 && i <= 5; i++){
   myArray.push(i);
 }
 
-document.write(myArray)
+console.log(myArray)
 
 
 
