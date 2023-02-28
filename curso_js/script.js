@@ -2,12 +2,14 @@
 const myArray = [];
 
 // Cambia solo el código debajo de esta línea
+ let i;
 
-for (let i = 1; i > 0 && i <= 5; i++){
-  myArray.push(i);
-}
+ for(i = 9; i > 0; i-=2){
+   myArray.push(i)
+ }
 
-console.log(myArray)
+
+
 
 
 
